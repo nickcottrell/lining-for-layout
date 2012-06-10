@@ -1,0 +1,7 @@
+/*for demo*/
+body {line-height:20px;}
+p {width:80%;}
+.lining-fixed {height:500px;background-color:#eee;}
+.lining-liquid {height:500px;background-color:#eee;}
+.unit-liquid {padding:25px}
+.unit-fixed {padding:25px;}
