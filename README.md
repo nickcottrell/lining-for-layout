@@ -14,7 +14,7 @@ Each line generates the CSS for a specific type of layout and is customizable. T
 
 	@include layout(3, 100%, liquid);
 
-That's 3 columns, 100% width, liquid layout. To modify the layout simply change these attributes. The code provided here (feel free to simply use the `compiled.css` file if you're not in to all this SCSS/SASS stuff) supports liquid and fixed layouts, 1 - 12 columns each. Out of the box, you can spec the styles as shown in the markup below.
+That's 3 columns, 100% width, liquid layout. To modify the layout simply change these attributes. The code provided here supports liquid and fixed layouts-- 1 to 12 columns each. Feel free to simply use the `compiled.css` file if you're not in to all this SCSS/SASS stuff Out of the box, you can spec the styles as shown in the markup below.
 
 In the HTML, just specify the amount of columns and type of layout as shown below.
 
