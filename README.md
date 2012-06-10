@@ -18,7 +18,7 @@ That's 3 columns, 100% width, liquid layout. To modify the layout simply change 
 
 ### Fixed width
 In the HTML, just specify the ammount of columns and type of layout as shown below.
-<code>
+<pre><code>
 <div class="lining-fixed">
 	<div class="group-fixed-5">
 		<div class="unit-fixed pos1"></div>
@@ -28,10 +28,10 @@ In the HTML, just specify the ammount of columns and type of layout as shown bel
 		<div class="unit-fixed pos5"></div>
 	</div>
 </div>
-</code>
+</code></pre>
 
 ### Liquid
-<code>
+<pre><code>
 <div class="lining-liquid">
 	<div class="group-liquid-3">
 		<div class="unit-liquid pos1"></div>
@@ -39,4 +39,5 @@ In the HTML, just specify the ammount of columns and type of layout as shown bel
 		<div class="unit-liquid pos3"></div>
 	</div>
 </div>
-</code>
+</pre></code>
+
