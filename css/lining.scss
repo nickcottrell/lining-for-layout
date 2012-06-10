@@ -1,3 +1,12 @@
+/*
+
+  /) ,           /)         ,    /)                                
+ //   __    _  _(/   _   _   _/_(/      _   _   _   _              
+(/__(_/ (__(/_(_(_   (_(/ _(_(__/ )_   /_)_(_(_/_)_/_)_ o   o   o  
+
+http://sass-lang.com/
+*/
+
 @mixin layout($col_num, $width, $type) {
 	$col_width: $width / $col_num ;
 	.lining-#{$type} {width:$width; margin:0 auto;}
