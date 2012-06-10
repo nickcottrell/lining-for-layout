@@ -45,12 +45,17 @@ In this system, there is no need to add an `offset` attribute as seen in other C
 ) shows this in the blank fourth column of the liquid layout.
 
 	<div class="lining-liquid">
-		<div class="group-liquid-3">
-			<div class="unit-liquid pos1"></div>
-			<!-- .pos2 intentially left out -->
-			<div class="unit-liquid pos3"></div>
-		</div>
-	</div>
+		<div class="group-liquid-5">
+
+			<div class="unit-liquid pos1"><p>...</p></div>
+			<div class="unit-liquid pos2"><p>...</p></div>
+			<div class="unit-liquid pos3"><p>...</p></div>
+			<!--skipped .pos4 on purpose to show how it offsets-->
+			<div class="unit-liquid pos5"><p>...</p></div>
+
+		</div><!--end .group-liquid-->
+	</div><!--end .lining-liquid -->
+
 
 ### Demo
 [http://istitch.net/lining-for-layout] (http://istitch.net/lining-for-layout)
