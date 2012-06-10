@@ -1,0 +1,48 @@
+@mixin layout($col_num, $width, $type) {
+	$col_width: $width / $col_num ;
+	.lining-#{$type} {width:$width; margin:0 auto;}
+	.group-#{$type}-#{$col_num} {
+			.unit-#{$type} {position: absolute; width:$col_width;}		
+			.pos1 {margin-left:0;}
+			.pos2 {margin-left: $col_width;}
+		}
+		$loop: 3;
+		@for $loop from 3 through $col_num {
+			$var: $loop - 1;
+			$varsum: $col_width * $var;	
+			.group-#{$type}-#{$col_num} .pos#{$loop} {margin-left:$varsum;}
+		}
+   		$loop: $loop + 1;
+}
+
+/*fixed*/
+@include layout(12, 960px, fixed);
+@include layout(11, 960px, fixed);
+@include layout(10, 960px, fixed);
+@include layout(9, 960px, fixed);
+@include layout(8, 960px, fixed);
+@include layout(7, 960px, fixed);
+@include layout(6, 960px, fixed);
+@include layout(5, 960px, fixed);
+@include layout(4, 960px, fixed);
+@include layout(3, 960px, fixed);
+@include layout(2, 960px, fixed);
+@include layout(1, 960px, fixed);
+
+
+	
+/*liquid*/
+@include layout(12, 100%, liquid);
+@include layout(11, 100%, liquid);
+@include layout(10, 100%, liquid);
+@include layout(9, 100%, liquid);
+@include layout(8, 100%, liquid);
+@include layout(7, 100%, liquid);
+@include layout(6, 100%, liquid);
+@include layout(5, 100%, liquid);
+@include layout(4, 100%, liquid);
+@include layout(3, 100%, liquid);
+@include layout(2, 100%, liquid);
+@include layout(1, 100%, liquid);
+
+	
