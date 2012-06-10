@@ -37,7 +37,7 @@ In the HTML, just specify the amount of columns and type of layout as shown belo
 			<div class="unit-liquid pos3"></div>
 		</div>
 	</div>
-	* feel free to name this stuff to fulfil your semantic markup purist desires.
+	*feel free to re-name this stuff to fulfil your semantic markup purist desires
 
 
 ### Offsetting
