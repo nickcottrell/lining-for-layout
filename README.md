@@ -9,7 +9,7 @@ Lining uses [SCSS](http://sass-lang.com/) to generate CSS that provides basic st
 	
 	@include layout(12, 960px, fixed);
 	
-Each line generates the CSS for a specific type of layout and is customizable. The attributes specified in the "layout" mixin are number of columns, overall width and type of layout (fixed or liquid shown here). In the [demo](http://istitch.net/lining-for-layout
+Each line generates the CSS for a specific type of layout and is customizable. The attributes specified in the "layout" mixin are number of columns, overall width and type of layout (fixed and liquid shown here). In the [demo](http://istitch.net/lining-for-layout
 ), liquid layouts look like this:
 
 	@include layout(3, 100%, liquid);
