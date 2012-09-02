@@ -85,7 +85,7 @@ This works by wrapping the "lining" styles in a "@media" query which has a set s
 
 
 #### What about IE 6-8???
-Lining for layout uses *@media* queries for it's responsive layer. Unfortunately this is only supported in IE9 and above, however, there is an awesome bit of JavaScript that you can use to make it work in older versions of IE (6-8). Simply add the [Respond.js](https://github.com/scottjehl/Respond) script. 
+Lining for layout uses *@media* queries for its responsive layer. Unfortunately this is only supported in IE9 and above, however, there is an awesome bit of JavaScript that you can use to make it work in older versions of IE (6-8). Simply add the [Respond.js](https://github.com/scottjehl/Respond) script. 
 
 Note: The Demo contains the [Respond.js](https://github.com/scottjehl/Respond) JavaScript.
 
