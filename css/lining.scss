@@ -13,7 +13,7 @@ http://sass-lang.com/
 	$col_width: $width / $col_num ;
 	.lining-#{$type}-#{$col_num} {width:$width;}
 	.group-#{$type}-#{$col_num} {
-			.unit-#{$type} {position: absolute; width:$col_width;}		
+			.unit-#{$type}-#{$col_num} {position: absolute; width:$col_width;}		
 			.pos1 {margin-left:0;}
 			.pos2 {margin-left: $col_width;}
 		}
@@ -30,7 +30,7 @@ http://sass-lang.com/
 		$loop: 1;
 		@for $loop from 1 through $col_num {
 			$span_width:$col_width * $loop ;
-			.#{$type}-#{$col_num}-span#{$loop} {width: $span_width !important;}
+			.group-#{$type}-#{$col_num} .span#{$loop} {width: $span_width !important;}
 		}
    		$loop: $loop + 1;
 

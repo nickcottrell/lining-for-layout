@@ -12,7 +12,7 @@ http://sass-lang.com/
   .lining-fixed-3 {
     width: 960px; }
 
-  .group-fixed-3 .unit-fixed {
+  .group-fixed-3 .unit-fixed-3 {
     position: absolute;
     width: 320px; }
   .group-fixed-3 .pos1 {
@@ -23,19 +23,19 @@ http://sass-lang.com/
   .group-fixed-3 .pos3 {
     margin-left: 640px; }
 
-  .fixed-3-span1 {
+  .group-fixed-3 .span1 {
     width: 320px !important; }
 
-  .fixed-3-span2 {
+  .group-fixed-3 .span2 {
     width: 640px !important; }
 
-  .fixed-3-span3 {
+  .group-fixed-3 .span3 {
     width: 960px !important; }
 
   .lining-liquid-5 {
     width: 80%; }
 
-  .group-liquid-5 .unit-liquid {
+  .group-liquid-5 .unit-liquid-5 {
     position: absolute;
     width: 16%; }
   .group-liquid-5 .pos1 {
@@ -52,17 +52,17 @@ http://sass-lang.com/
   .group-liquid-5 .pos5 {
     margin-left: 64%; }
 
-  .liquid-5-span1 {
+  .group-liquid-5 .span1 {
     width: 16% !important; }
 
-  .liquid-5-span2 {
+  .group-liquid-5 .span2 {
     width: 32% !important; }
 
-  .liquid-5-span3 {
+  .group-liquid-5 .span3 {
     width: 48% !important; }
 
-  .liquid-5-span4 {
+  .group-liquid-5 .span4 {
     width: 64% !important; }
 
-  .liquid-5-span5 {
+  .group-liquid-5 .span5 {
     width: 80% !important; } }

@@ -45,8 +45,8 @@ An important layout feature is to be able to span 2 or more columns in a layout.
 	<div class="lining-liquid-5">
 		<div class="group-liquid-5">
 
-			<div class="unit-liquid-5 pos1 liquid-5-span2"><p>...</p></div>
-			<!--skipped .pos2 on purpose because pos1 spans 2 positions-->
+			<div class="unit-liquid-5 pos1 span2"><p>...</p></div>
+			<!--skipped .pos2 on purpose because pos1 spans 2 positions (or er... columns)-->
 			<div class="unit-liquid-5 pos3"><p>...</p></div>
 			<div class="unit-liquid-5 pos4"><p>...</p></div>			
 			<div class="unit-liquid-5 pos5"><p>...</p></div>
