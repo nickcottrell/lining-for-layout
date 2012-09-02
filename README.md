@@ -83,6 +83,14 @@ The layout shown here is responsive, meaning that its attributes change dependin
 	
 This works by wrapping the "lining" styles in a "@media" query which has a set screen size. The demo is set at 800px so the "lining" styles kick in at 800px. That means the layout defined by the sass includes will display on screens 800px and beyond. Below 800px will show up as the default. This supports the [*mobile first*](http://www.abookapart.com/products/mobile-first) approach and can be adjusted for any screen size. 
 
+
+#### What about IE 6-8???
+Lining for layout uses *@media* queries for it's responsive layer. Unfortunately this is only supported in IE9 and above, however, there is an awesome bit of JavaScript that you can use to make it work in older versions of IE (6-8). Simply add the [Respond.js](https://github.com/scottjehl/Respond) script. 
+
+Note: The Demo contains the [Respond.js](https://github.com/scottjehl/Respond) JavaScript.
+
+
+
 ### Not into SASS?
 You can just use the *sassless* version of the styles located in `css/sassless/`. It supports a 12 column, 960px, fixed layout and a 12 column, 100% width, liquid layout. No need for SASS because we already compiled the following for you.
 
@@ -90,6 +98,7 @@ You can just use the *sassless* version of the styles located in `css/sassless/`
 	@include layout(12, 100%, liquid);
 
 There's also the choice between `sassless-lining.css` and `sassless-lining-responsive.css`, with the styles set to kick in after 800px.
+
 
 
 ### Demo
