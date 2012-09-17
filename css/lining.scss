@@ -9,34 +9,63 @@ http://sass-lang.com/
 
 */
 
-@mixin layout($col_num, $width, $type) {
+@mixin lining($col_num, $width, $name) {	
 	$col_width: $width / $col_num ;
-	.lining-#{$type}-#{$col_num} {width:$width;}
-	.group-#{$type}-#{$col_num} {
-			.unit-#{$type}-#{$col_num} {position: absolute; width:$col_width;}		
-			.pos1 {margin-left:0;}
-			.pos2 {margin-left: $col_width;}
+	.#{$name} {width:100%; display:block; float:left;
+		.group {width:#{$width}; margin:0 auto;
+			.item {float:left; height:100%; width:#{$col_width};}	
 		}
-		$loop: 3;
-		@for $loop from 3 through $col_num {
-			$var: $loop - 1;
-			$varsum: $col_width * $var;	
-			.group-#{$type}-#{$col_num} .pos#{$loop} {margin-left:$varsum;}
-		}
-   		$loop: $loop + 1;
+	}
+	
+	.#{$name} {
+		.group {
+			.span-1 {width:#{$col_width}}
+				$loop: 2;
+				@for $loop from 2 through $col_num {
+					$var: $loop - 0;
+					$varsum: $col_width * $var;	
+					.span-#{$loop} {width:$varsum;}
+				}
+   				$loop: $loop + 1;		
+			}
+		}	
+
+	.#{$name} {
+		.group {
+			.skip-1 {margin-left:#{$col_width}}
+				$loop: 2;
+				@for $loop from 2 through $col_num {
+					$var: $loop - 0;
+					$varsum: $col_width * $var;	
+					.skip-#{$loop} {margin-left:$varsum;}
+				}
+   				$loop: $loop + 1;		
+			}
+		}	
+	}
 
 
-
-		$loop: 1;
-		@for $loop from 1 through $col_num {
-			$span_width:$col_width * $loop ;
-			.group-#{$type}-#{$col_num} .span#{$loop} {width: $span_width !important;}
-		}
-   		$loop: $loop + 1;
-
+@mixin nested($width, $height, $name) {	
+	.#{$name} {width:100%; height:100%; float:left; display:block;}
+	.#{$name} .item {min-height:#{$height}; width:#{$width} !important; display:block; float:left;}
 }
 
-@media screen and (min-width: 800px), only print, projector {
-@include layout(3, 960px, fixed);
-@include layout(5, 80%, liquid);
-}
+
+@include nested(100px, 35px, main-nav);
+
+@media screen and (min-width: 770px) {
+
+/*nameofliquid (5-col liquid layout)
+----------------------------------*/
+@include lining(5, 100%, header-footer);
+
+/*name (5-col fixed layout)
+----------------------------------*/
+@include lining(5, 960px, main-content);
+
+/*newgroup (3-col fixed layout)
+----------------------------------*/
+@include lining(3, 960px, content-footing);
+
+} /*end of 770px*/
+

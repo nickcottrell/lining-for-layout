@@ -8,61 +8,116 @@ http://sass-lang.com/
  
 
 */
-@media screen and (min-width: 800px), only print, projector {
-  .lining-fixed-3 {
+.main-nav {
+  width: 100%;
+  height: 100%;
+  float: left;
+  display: block; }
+
+.main-nav .item {
+  min-height: 35px;
+  width: 100px !important;
+  display: block;
+  float: left; }
+
+@media screen and (min-width: 770px) {
+  /*nameofliquid (5-col liquid layout)
+  ----------------------------------*/
+  .header-footer {
+    width: 100%;
+    display: block;
+    float: left; }
+    .header-footer .group {
+      width: 100%;
+      margin: 0 auto; }
+      .header-footer .group .item {
+        float: left;
+        height: 100%;
+        width: 20%; }
+
+  .header-footer .group .span-1 {
+    width: 20%; }
+  .header-footer .group .span-2 {
+    width: 40%; }
+  .header-footer .group .span-3 {
+    width: 60%; }
+  .header-footer .group .span-4 {
+    width: 80%; }
+  .header-footer .group .span-5 {
+    width: 100%; }
+
+  .header-footer .group .skip-1 {
+    margin-left: 20%; }
+  .header-footer .group .skip-2 {
+    margin-left: 40%; }
+  .header-footer .group .skip-3 {
+    margin-left: 60%; }
+  .header-footer .group .skip-4 {
+    margin-left: 80%; }
+  .header-footer .group .skip-5 {
+    margin-left: 100%; }
+
+  /*name (5-col fixed layout)
+  ----------------------------------*/
+  .main-content {
+    width: 100%;
+    display: block;
+    float: left; }
+    .main-content .group {
+      width: 960px;
+      margin: 0 auto; }
+      .main-content .group .item {
+        float: left;
+        height: 100%;
+        width: 192px; }
+
+  .main-content .group .span-1 {
+    width: 192px; }
+  .main-content .group .span-2 {
+    width: 384px; }
+  .main-content .group .span-3 {
+    width: 576px; }
+  .main-content .group .span-4 {
+    width: 768px; }
+  .main-content .group .span-5 {
     width: 960px; }
 
-  .group-fixed-3 .unit-fixed-3 {
-    position: absolute;
+  .main-content .group .skip-1 {
+    margin-left: 192px; }
+  .main-content .group .skip-2 {
+    margin-left: 384px; }
+  .main-content .group .skip-3 {
+    margin-left: 576px; }
+  .main-content .group .skip-4 {
+    margin-left: 768px; }
+  .main-content .group .skip-5 {
+    margin-left: 960px; }
+
+  /*newgroup (3-col fixed layout)
+  ----------------------------------*/
+  .content-footing {
+    width: 100%;
+    display: block;
+    float: left; }
+    .content-footing .group {
+      width: 960px;
+      margin: 0 auto; }
+      .content-footing .group .item {
+        float: left;
+        height: 100%;
+        width: 320px; }
+
+  .content-footing .group .span-1 {
     width: 320px; }
-  .group-fixed-3 .pos1 {
-    margin-left: 0; }
-  .group-fixed-3 .pos2 {
+  .content-footing .group .span-2 {
+    width: 640px; }
+  .content-footing .group .span-3 {
+    width: 960px; }
+
+  .content-footing .group .skip-1 {
     margin-left: 320px; }
-
-  .group-fixed-3 .pos3 {
+  .content-footing .group .skip-2 {
     margin-left: 640px; }
-
-  .group-fixed-3 .span1 {
-    width: 320px !important; }
-
-  .group-fixed-3 .span2 {
-    width: 640px !important; }
-
-  .group-fixed-3 .span3 {
-    width: 960px !important; }
-
-  .lining-liquid-5 {
-    width: 80%; }
-
-  .group-liquid-5 .unit-liquid-5 {
-    position: absolute;
-    width: 16%; }
-  .group-liquid-5 .pos1 {
-    margin-left: 0; }
-  .group-liquid-5 .pos2 {
-    margin-left: 16%; }
-
-  .group-liquid-5 .pos3 {
-    margin-left: 32%; }
-
-  .group-liquid-5 .pos4 {
-    margin-left: 48%; }
-
-  .group-liquid-5 .pos5 {
-    margin-left: 64%; }
-
-  .group-liquid-5 .span1 {
-    width: 16% !important; }
-
-  .group-liquid-5 .span2 {
-    width: 32% !important; }
-
-  .group-liquid-5 .span3 {
-    width: 48% !important; }
-
-  .group-liquid-5 .span4 {
-    width: 64% !important; }
-
-  .group-liquid-5 .span5 {
-    width: 80% !important; } }
+  .content-footing .group .skip-3 {
+    margin-left: 960px; } }
+/*end of 770px*/
