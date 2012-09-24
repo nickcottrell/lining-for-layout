@@ -1,0 +1,279 @@
+/*
+
+  /) ,           /)         ,    /)                                
+ /    __    _  _(/   _   _   _/_(/      _   _   _   _              
+(/__(_/ (__(/_(_(_   (_(/ _(_(__/ )_   /_)_(_(_/_)_/_)_ o   o   o  
+
+http://sass-lang.com/
+ 
+
+*/
+@media screen and (min-width: 770px) {
+  /*nameofliquid (3-col liquid layout)
+  ----------------------------------*/
+  .header-footer {
+    width: 100%;
+    display: block;
+    float: left; }
+    .header-footer .group {
+      width: 100%;
+      margin: 0 auto; }
+      .header-footer .group .item {
+        float: left;
+        height: 100%;
+        width: 33.333%; }
+
+  .header-footer .group .span-1 {
+    width: 33.333%; }
+  .header-footer .group .span-2 {
+    width: 66.667%; }
+  .header-footer .group .span-3 {
+    width: 100%; }
+
+  .header-footer .group .skip-1 {
+    margin-left: 33.333%; }
+  .header-footer .group .skip-2 {
+    margin-left: 66.667%; }
+  .header-footer .group .skip-3 {
+    margin-left: 100%; }
+
+  /*nameofliquid (1-col liquid layout)
+  ----------------------------------*/
+  .scrollcontainer {
+    width: 100%;
+    display: block;
+    float: left; }
+    .scrollcontainer .group {
+      width: 100%;
+      margin: 0 auto; }
+      .scrollcontainer .group .item {
+        float: left;
+        height: 100%;
+        width: 100%; }
+
+  .scrollcontainer .group .span-1 {
+    width: 100%; }
+
+  .scrollcontainer .group .skip-1 {
+    margin-left: 100%; }
+
+  /*newgroup (30-col 2000px fixed layout)
+  ----------------------------------*/
+  .narrow {
+    width: 100%;
+    display: block;
+    float: left; }
+    .narrow .group {
+      width: 3000px;
+      margin: 0 auto; }
+      .narrow .group .item {
+        float: left;
+        height: 100%;
+        width: 100px; }
+
+  .narrow .group .span-1 {
+    width: 100px; }
+  .narrow .group .span-2 {
+    width: 200px; }
+  .narrow .group .span-3 {
+    width: 300px; }
+  .narrow .group .span-4 {
+    width: 400px; }
+  .narrow .group .span-5 {
+    width: 500px; }
+  .narrow .group .span-6 {
+    width: 600px; }
+  .narrow .group .span-7 {
+    width: 700px; }
+  .narrow .group .span-8 {
+    width: 800px; }
+  .narrow .group .span-9 {
+    width: 900px; }
+  .narrow .group .span-10 {
+    width: 1000px; }
+  .narrow .group .span-11 {
+    width: 1100px; }
+  .narrow .group .span-12 {
+    width: 1200px; }
+  .narrow .group .span-13 {
+    width: 1300px; }
+  .narrow .group .span-14 {
+    width: 1400px; }
+  .narrow .group .span-15 {
+    width: 1500px; }
+  .narrow .group .span-16 {
+    width: 1600px; }
+  .narrow .group .span-17 {
+    width: 1700px; }
+  .narrow .group .span-18 {
+    width: 1800px; }
+  .narrow .group .span-19 {
+    width: 1900px; }
+  .narrow .group .span-20 {
+    width: 2000px; }
+  .narrow .group .span-21 {
+    width: 2100px; }
+  .narrow .group .span-22 {
+    width: 2200px; }
+  .narrow .group .span-23 {
+    width: 2300px; }
+  .narrow .group .span-24 {
+    width: 2400px; }
+  .narrow .group .span-25 {
+    width: 2500px; }
+  .narrow .group .span-26 {
+    width: 2600px; }
+  .narrow .group .span-27 {
+    width: 2700px; }
+  .narrow .group .span-28 {
+    width: 2800px; }
+  .narrow .group .span-29 {
+    width: 2900px; }
+  .narrow .group .span-30 {
+    width: 3000px; }
+
+  .narrow .group .skip-1 {
+    margin-left: 100px; }
+  .narrow .group .skip-2 {
+    margin-left: 200px; }
+  .narrow .group .skip-3 {
+    margin-left: 300px; }
+  .narrow .group .skip-4 {
+    margin-left: 400px; }
+  .narrow .group .skip-5 {
+    margin-left: 500px; }
+  .narrow .group .skip-6 {
+    margin-left: 600px; }
+  .narrow .group .skip-7 {
+    margin-left: 700px; }
+  .narrow .group .skip-8 {
+    margin-left: 800px; }
+  .narrow .group .skip-9 {
+    margin-left: 900px; }
+  .narrow .group .skip-10 {
+    margin-left: 1000px; }
+  .narrow .group .skip-11 {
+    margin-left: 1100px; }
+  .narrow .group .skip-12 {
+    margin-left: 1200px; }
+  .narrow .group .skip-13 {
+    margin-left: 1300px; }
+  .narrow .group .skip-14 {
+    margin-left: 1400px; }
+  .narrow .group .skip-15 {
+    margin-left: 1500px; }
+  .narrow .group .skip-16 {
+    margin-left: 1600px; }
+  .narrow .group .skip-17 {
+    margin-left: 1700px; }
+  .narrow .group .skip-18 {
+    margin-left: 1800px; }
+  .narrow .group .skip-19 {
+    margin-left: 1900px; }
+  .narrow .group .skip-20 {
+    margin-left: 2000px; }
+  .narrow .group .skip-21 {
+    margin-left: 2100px; }
+  .narrow .group .skip-22 {
+    margin-left: 2200px; }
+  .narrow .group .skip-23 {
+    margin-left: 2300px; }
+  .narrow .group .skip-24 {
+    margin-left: 2400px; }
+  .narrow .group .skip-25 {
+    margin-left: 2500px; }
+  .narrow .group .skip-26 {
+    margin-left: 2600px; }
+  .narrow .group .skip-27 {
+    margin-left: 2700px; }
+  .narrow .group .skip-28 {
+    margin-left: 2800px; }
+  .narrow .group .skip-29 {
+    margin-left: 2900px; }
+  .narrow .group .skip-30 {
+    margin-left: 3000px; }
+
+  /*newgroup (10-col 2000px fixed layout)
+  ----------------------------------*/
+  .wide {
+    width: 100%;
+    display: block;
+    float: left; }
+    .wide .group {
+      width: 3000px;
+      margin: 0 auto; }
+      .wide .group .item {
+        float: left;
+        height: 100%;
+        width: 300px; }
+
+  .wide .group .span-1 {
+    width: 300px; }
+  .wide .group .span-2 {
+    width: 600px; }
+  .wide .group .span-3 {
+    width: 900px; }
+  .wide .group .span-4 {
+    width: 1200px; }
+  .wide .group .span-5 {
+    width: 1500px; }
+  .wide .group .span-6 {
+    width: 1800px; }
+  .wide .group .span-7 {
+    width: 2100px; }
+  .wide .group .span-8 {
+    width: 2400px; }
+  .wide .group .span-9 {
+    width: 2700px; }
+  .wide .group .span-10 {
+    width: 3000px; }
+
+  .wide .group .skip-1 {
+    margin-left: 300px; }
+  .wide .group .skip-2 {
+    margin-left: 600px; }
+  .wide .group .skip-3 {
+    margin-left: 900px; }
+  .wide .group .skip-4 {
+    margin-left: 1200px; }
+  .wide .group .skip-5 {
+    margin-left: 1500px; }
+  .wide .group .skip-6 {
+    margin-left: 1800px; }
+  .wide .group .skip-7 {
+    margin-left: 2100px; }
+  .wide .group .skip-8 {
+    margin-left: 2400px; }
+  .wide .group .skip-9 {
+    margin-left: 2700px; }
+  .wide .group .skip-10 {
+    margin-left: 3000px; }
+
+  /*newgroup (3-col 2000px fixed layout)
+  ----------------------------------*/
+  .extrawide {
+    width: 100%;
+    display: block;
+    float: left; }
+    .extrawide .group {
+      width: 3000px;
+      margin: 0 auto; }
+      .extrawide .group .item {
+        float: left;
+        height: 100%;
+        width: 1000px; }
+
+  .extrawide .group .span-1 {
+    width: 1000px; }
+  .extrawide .group .span-2 {
+    width: 2000px; }
+  .extrawide .group .span-3 {
+    width: 3000px; }
+
+  .extrawide .group .skip-1 {
+    margin-left: 1000px; }
+  .extrawide .group .skip-2 {
+    margin-left: 2000px; }
+  .extrawide .group .skip-3 {
+    margin-left: 3000px; } }
+/*end of 770px*/

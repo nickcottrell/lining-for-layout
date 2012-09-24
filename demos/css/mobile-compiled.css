@@ -1,0 +1,123 @@
+/*
+
+  /) ,           /)         ,    /)                                
+ /    __    _  _(/   _   _   _/_(/      _   _   _   _              
+(/__(_/ (__(/_(_(_   (_(/ _(_(__/ )_   /_)_(_(_/_)_/_)_ o   o   o  
+
+http://sass-lang.com/
+ 
+
+*/
+.main-nav {
+  width: 100%;
+  height: 100%;
+  float: left;
+  display: block; }
+
+.main-nav .item {
+  min-height: 35px;
+  width: 100px !important;
+  display: block;
+  float: left; }
+
+@media screen and (min-width: 770px) {
+  /*nameofliquid (5-col liquid layout)
+  ----------------------------------*/
+  .header-footer {
+    width: 100%;
+    display: block;
+    float: left; }
+    .header-footer .group {
+      width: 100%;
+      margin: 0 auto; }
+      .header-footer .group .item {
+        float: left;
+        height: 100%;
+        width: 20%; }
+
+  .header-footer .group .span-1 {
+    width: 20%; }
+  .header-footer .group .span-2 {
+    width: 40%; }
+  .header-footer .group .span-3 {
+    width: 60%; }
+  .header-footer .group .span-4 {
+    width: 80%; }
+  .header-footer .group .span-5 {
+    width: 100%; }
+
+  .header-footer .group .skip-1 {
+    margin-left: 20%; }
+  .header-footer .group .skip-2 {
+    margin-left: 40%; }
+  .header-footer .group .skip-3 {
+    margin-left: 60%; }
+  .header-footer .group .skip-4 {
+    margin-left: 80%; }
+  .header-footer .group .skip-5 {
+    margin-left: 100%; }
+
+  /*name (5-col fixed layout)
+  ----------------------------------*/
+  .main-content {
+    width: 100%;
+    display: block;
+    float: left; }
+    .main-content .group {
+      width: 960px;
+      margin: 0 auto; }
+      .main-content .group .item {
+        float: left;
+        height: 100%;
+        width: 192px; }
+
+  .main-content .group .span-1 {
+    width: 192px; }
+  .main-content .group .span-2 {
+    width: 384px; }
+  .main-content .group .span-3 {
+    width: 576px; }
+  .main-content .group .span-4 {
+    width: 768px; }
+  .main-content .group .span-5 {
+    width: 960px; }
+
+  .main-content .group .skip-1 {
+    margin-left: 192px; }
+  .main-content .group .skip-2 {
+    margin-left: 384px; }
+  .main-content .group .skip-3 {
+    margin-left: 576px; }
+  .main-content .group .skip-4 {
+    margin-left: 768px; }
+  .main-content .group .skip-5 {
+    margin-left: 960px; }
+
+  /*newgroup (3-col fixed layout)
+  ----------------------------------*/
+  .content-footing {
+    width: 100%;
+    display: block;
+    float: left; }
+    .content-footing .group {
+      width: 960px;
+      margin: 0 auto; }
+      .content-footing .group .item {
+        float: left;
+        height: 100%;
+        width: 320px; }
+
+  .content-footing .group .span-1 {
+    width: 320px; }
+  .content-footing .group .span-2 {
+    width: 640px; }
+  .content-footing .group .span-3 {
+    width: 960px; }
+
+  .content-footing .group .skip-1 {
+    margin-left: 320px; }
+  .content-footing .group .skip-2 {
+    margin-left: 640px; }
+  .content-footing .group .skip-3 {
+    margin-left: 960px; } }
+/*end of 770px*/

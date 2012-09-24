@@ -1,0 +1,12 @@
+header {}
+footer {}
+
+body {background-color:#999;}
+
+.header-footer {min-height:56px; float-left: margin:0; padding:0; display:block; background-color:#222; color:#666; box-shadow: 0 0 8px #000;}
+.scrollcontainer{overflow-x:scroll;}
+
+
+@media screen and (min-width: 770px) {
+
+}

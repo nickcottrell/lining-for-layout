@@ -1,0 +1,110 @@
+/*
+
+  /) ,           /)         ,    /)                                
+ /    __    _  _(/   _   _   _/_(/      _   _   _   _              
+(/__(_/ (__(/_(_(_   (_(/ _(_(__/ )_   /_)_(_(_/_)_/_)_ o   o   o  
+
+http://sass-lang.com/
+ 
+
+*/
+@mixin lining-fixed($col_num, $width, $name) {	
+	$col_width: $width / $col_num ;
+	.#{$name} {width:100%; display:block; float:left;
+		.group {width:#{$width}; margin:0 auto;
+			.item {float:left; height:100%; width:#{$col_width};}	
+		}
+	}
+	
+	.#{$name} {
+		.group {
+			.span-1 {width:#{$col_width}}
+				$loop: 2;
+				@for $loop from 2 through $col_num {
+					$var: $loop - 0;
+					$varsum: $col_width * $var;	
+					.span-#{$loop} {width:$varsum;}
+				}
+   				$loop: $loop + 1;		
+			}
+		}	
+
+	.#{$name} {
+		.group {
+			.skip-1 {margin-left:#{$col_width}}
+				$loop: 2;
+				@for $loop from 2 through $col_num {
+					$var: $loop - 0;
+					$varsum: $col_width * $var;	
+					.skip-#{$loop} {margin-left:$varsum;}
+				}
+   				$loop: $loop + 1;		
+			}
+		}	
+	}
+
+	
+
+@mixin lining-liquid($col_num, $width, $name) {	
+	$col_width: 100% / $col_num ;
+	.#{$name} {width:#{$width}; display:block; float:left;
+		.group {width:100%; margin:0 auto;
+			.item {float:left; height:100%; width:#{$col_width};}	
+		}
+	}
+	
+	.#{$name} {
+		.group {
+			.span-1 {width:#{$col_width}}
+				$loop: 2;
+				@for $loop from 2 through $col_num {
+					$var: $loop - 0;
+					$varsum: $col_width * $var;	
+					.span-#{$loop} {width:$varsum;}
+				}
+   				$loop: $loop + 1;		
+			}
+		}	
+
+	.#{$name} {
+		.group {
+			.skip-1 {margin-left:#{$col_width}}
+				$loop: 2;
+				@for $loop from 2 through $col_num {
+					$var: $loop - 0;
+					$varsum: $col_width * $var;	
+					.skip-#{$loop} {margin-left:$varsum;}
+				}
+   				$loop: $loop + 1;		
+			}
+		}	
+	}
+
+
+
+
+@media screen and (min-width: 770px) {
+
+/*nameofliquid (3-col liquid layout)
+----------------------------------*/
+@include lining-liquid(3, 100%, header-footer);
+
+/*nameofliquid (1-col liquid layout)
+----------------------------------*/
+@include lining-liquid(1, 100%, scrollcontainer);
+
+/*newgroup (30-col 2000px fixed layout)
+----------------------------------*/
+@include lining-fixed(30, 3000px, narrow);
+
+/*newgroup (10-col 2000px fixed layout)
+----------------------------------*/
+@include lining-fixed(10, 3000px, wide);
+
+/*newgroup (3-col 2000px fixed layout)
+----------------------------------*/
+@include lining-fixed(3, 3000px, extrawide);
+
+
+} /*end of 770px*/
+
