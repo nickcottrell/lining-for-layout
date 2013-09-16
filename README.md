@@ -1,8 +1,8 @@
 Lining
 ===========
 
-CSS grid framework
-------------------
+Super simple, slightly semantic grid system
+-------------------------------------------
 
 ### How does it work
 Lining uses [SCSS](http://sass-lang.com/) to generate CSS that provides basic structure to your web layout. In the `lining.scss` file, you'll see mixins that look this:
