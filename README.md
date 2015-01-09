@@ -21,20 +21,20 @@ In the HTML, just specify the amount of columns and type of layout as shown belo
 ### Fixed*
 	<div class="fixed">
 		<div class="group">
-			<div class="unit"></div>
-			<div class="unit"></div>
-			<div class="unit"></div>
-			<div class="unit"></div>
-			<div class="unit"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
 		</div>
 	</div>
 
 ### Liquid*
 	<div class="lining">
 		<div class="group">
-			<div class="unit"></div>
-			<div class="unit"></div>
-			<div class="unit"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
 		</div>
 	</div>
 	*feel free to re-name the mixin and fulfil your semantic markup purist desires
@@ -45,11 +45,11 @@ An important layout feature is to be able to span 2 or more columns in a layout.
 	<div class="liquid">
 		<div class="group">
 
-			<div class="unit span-2">...</div>
+			<div class="item span-2">...</div>
 			<!--no unit #2 here-->
-			<div class="unit">...</div>
-			<div class="unit">...</div>
-			<div class="unit">...</div>
+			<div class="item">...</div>
+			<div class="item">...</div>
+			<div class="item">...</div>
 
 		</div>
 	</div>
@@ -61,11 +61,11 @@ To skip over a section of the grid, add the "skip-#" class and specify how many 
 	<div class="liquid">
 		<div class="group">
 
-			<div class="unit">...</div>
-			<div class="unit">...</div>
-			<div class="unit">...</div>
-			<!--no unit #4 here-->
-			<div class="unit skip-1">...</div>
+			<div class="item">...</div>
+			<div class="item">...</div>
+			<div class="item">...</div>
+			<!--no item #4 here-->
+			<div class="item skip-1">...</div>
 
 		</div>
 	</div>
@@ -106,7 +106,7 @@ Note: if you don't want responsive, simply remove the media query.
 I believe in semantic markup. However, sometimes when you're making a fully customizable, modular layout system, it isn't possible or practical to completely avoid any reference to the presentational elements. I feel that if you have a well-thought-out, nicely structured system, then it will save you all the time in the world for discussions about semantic markup. 
 
 I've attempted to do start the discussion here, by ditching reference to rows and columns in the compiled CSS layer. A few of the class names were chosen for the [demo](http://istitch.net/lining-for-layout
-) because it helps make their function more clear (which ironically seems pretty *semantic* to me, btw). Terms like `group`, `unit` and `pos` (position) are used instead of `row`, `col`, etc. The terms for `liquid` and `fixed` are make more sense for the demo but they can easily be changed to something that suits your semantic needs. Unfortunately, the number of columns in the layout is required for now because it's integral to the way the base column widths are calculated. Maybe that'll change someday but maybe not.
+) because it helps make their function more clear (which ironically seems pretty *semantic* to me, btw). Terms like `group`, `item` and `pos` (position) are used instead of `row`, `col`, etc. The terms for `liquid` and `fixed` are make more sense for the demo but they can easily be changed to something that suits your semantic needs. Unfortunately, the number of columns in the layout is required for now because it's integral to the way the base column widths are calculated. Maybe that'll change someday but maybe not.
    
 
 
